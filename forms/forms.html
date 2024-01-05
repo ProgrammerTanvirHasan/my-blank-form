@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+   
+</head>
+<body>
+  <main>
+      <h1>First fil up this form</h1>  
+      <div>
+      <label for="name">Name:</label>    
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+        <label for="email">Email:</label>    
+        <input type="mail" id="email" name="email"  placeholder="@gmail.com" required>
+      </div>
+  
+      <div>
+        <label for="pass">Password:</label>    
+        <input type="password" id="pass" name="pass">
+      </div>
+      <div>
+<label for="country">Country:</label>
+<input list="con" id="country" name="country">
+<datalist id="con">
+  <section>
+  <option for="bang">Bangladesh</option>
+  <option for="ind">India</option>
+  <option for="pak">pakistan</option>
+</section>
+</datalist>
+
+
+
+
+      </div>
+  
+      <div>
+        <label for="number">Phone:</label>   
+        <select>
+          <option value="+880">+880</option>
+          <option value="+990">+990</option>
+          <option value="+110">+110</option>
+        </select>
+        <input type="number" id="number" name="number" value="number" placeholder="0123456789">
+      </div>
+      <div>
+        <label for="gender">Gender:</label> 
+        <input type="radio" id= "gender" name="gender" value="male">Male
+        <input type="radio" id="gender" name="gender" value="female">Female
+        <input type="radio" id="gender" name="gender" value="others">Others
+      </div>
+      <div>
+<label for="religion">Religion:</label>
+<input type="radio" id="religion" name="religion"  value="religion">Islam
+<input type="radio" id="religion" name="religion" value="hindu">Hindu
+<input type="radio" id="religion" name="religion" value="others">Others
+      </div>
+<label for="date">Date of birth:</label>
+      <input type="date" id="date" name="date" value="date">
+  <label for="time" >Time:</label>
+  <input type="time" id="time" name="time" value="time"><br>
+<label for="photo">Chose your photo</label>
+<input type="file" id="photo" name="photo" value="photo"><br>
+<div>
+  <fieldset>
+   <legend id="field">Chose which you have</legend>
+   <input type="radio" id="bike" name="car" value="bike">bike<br>
+   <input type="radio" id="bike" name="car" value="cycle">cycle<br>
+   <input type="radio" id="bike" name="car" value="others">others
+  </fieldset>
+</div>
+<div>
+<input type="text area" id="text"
+placeholder="comment here" >
+
+</div>
+<div id="button">
+<button type="reset">Reset</button>
+<button type="submit">Submit</button>
+</div>
+</main>
+
+</body>
+</html>
